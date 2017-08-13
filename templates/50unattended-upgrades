@@ -1,0 +1,20 @@
+APT::Periodic::Enable "1";
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::AutocleanInterval "7";
+APT::Periodic::Unattended-Upgrade "1";
+Unattended-Upgrade::Mail "{{ apt_email_address }}";
+
+// Automatically upgrade packages from these (origin, archive) pairs
+Unattended-Upgrade::Allowed-Origins {
+"${distro_id} stable";
+"${distro_id} ${distro_codename}-updates";
+"${distro_id} ${distro_codename}-security";
+};
+
+// You can specify your own packages to NOT automatically upgrade here
+Unattended-Upgrade::Package-Blacklist {
+// "nginx";
+// "php5-fpm";
+};
+
+Unattended-Upgrade::Automatic-Reboot "false";
