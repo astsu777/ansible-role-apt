@@ -25,12 +25,13 @@ Example Playbook
 
 Here is a simple example playbook to use this role:
 
-``
+```
 hosts: all
 user: root
 roles:
   - { role: apt, tags: [ 'apt' ] }
-``
+
+```
 
 License
 -------
