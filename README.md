@@ -30,7 +30,6 @@ hosts: all
 user: root
 roles:
   - { role: apt, tags: [ 'apt' ] }
-
 ```
 
 License
