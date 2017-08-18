@@ -7,7 +7,7 @@
 
 - name: (APT) Configure the 'sources.list' file
   template:
-    src: src/apt/sources.list
+    src: sources.list
     dest: /etc/apt/sources.list
     force: yes
     owner: root
@@ -31,7 +31,7 @@
 
 - name: (APT) Configure Unattended-upgrades
   template:
-    src: src/apt/50unattended-upgrades
+    src: 50unattended-upgrades
     dest: /etc/apt/50unattended-upgrades
     force: yes
     owner: root
@@ -40,7 +40,7 @@
 
 - name: (APT) Configure Auto-upgrades
   copy:
-    src: src/apt/20auto-upgrades
+    src: 20auto-upgrades
     dest: /etc/apt/20auto-upgrades
     force: yes
     owner: root
