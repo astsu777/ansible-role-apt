@@ -15,6 +15,8 @@ The only variable for this role is the email address used for the notifications.
 
 ``` apt_email_address: myemail@email.com ```
 
+The variable can be defined in group_vars or in host_vars.
+
 Dependencies
 ------------
 
