@@ -18,7 +18,7 @@
   apt:
     update_cache: yes
     upgrade: yes
-    
+
 - name: (APT) Install recommended packages
   package:
     name: "{{ item }}"
@@ -32,7 +32,7 @@
 - name: (APT) Configure Unattended-upgrades
   template:
     src: 50unattended-upgrades
-    dest: /etc/apt/conf.d/50unattended-upgrades
+    dest: /etc/apt/apt.conf.d/50unattended-upgrades
     force: yes
     owner: root
     group: root
@@ -41,7 +41,7 @@
 - name: (APT) Configure Auto-upgrades
   copy:
     src: 20auto-upgrades
-    dest: /etc/apt/conf.d/20auto-upgrades
+    dest: /etc/apt/apt.conf.d/20auto-upgrades
     force: yes
     owner: root
     group: root
