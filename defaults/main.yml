@@ -1,5 +1,5 @@
 ---
-# Default variables for apt role
+# Default variables for this role
 
 ## Define the APTiCron email address
 apt_email_address: myemail@email.com
