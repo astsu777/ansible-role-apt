@@ -1,7 +1,7 @@
 Ansible Role: APT
 =========
 
-This role configure the aptitude package on Debian system. It enables automatic installation of security updates and provide email notification as soon as a package update is available.
+This role configures the aptitude package on Debian system. It enables automatic installation of security updates and provide email notification as soon as a package update is available.
 
 Requirements
 ------------
