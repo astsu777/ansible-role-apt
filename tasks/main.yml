@@ -1,4 +1,4 @@
 ---
 # Configure APT if the system is Debian based
-- include: apt.yml
+- include_tasks: apt.yml
   when: ansible_os_family == "Debian"
